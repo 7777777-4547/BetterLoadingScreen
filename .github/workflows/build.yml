@@ -15,8 +15,13 @@ jobs:
       run: chmod +x ./gradlew
     - name: Build artifacts
       run: ./gradlew build
-    - name: Upload build artifacts
+    - name: Upload build artifacts[Fabric]
       uses: actions/upload-artifact@v1
       with:
         name: build-artifacts
-        path: build/libs
+        path: fabric/build/libs
+    - name: Upload build artifacts[Forge]
+      uses: actions/upload-artifact@v1
+      with:
+        name: build-artifacts
+        path: forge/build/libs
