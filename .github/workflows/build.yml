@@ -18,10 +18,10 @@ jobs:
     - name: Upload build artifacts[Fabric]
       uses: actions/upload-artifact@v1
       with:
-        name: build-artifacts
+        name: build-artifacts[Fabric]
         path: fabric/build/libs
     - name: Upload build artifacts[Forge]
       uses: actions/upload-artifact@v1
       with:
-        name: build-artifacts
+        name: build-artifacts[Forge]
         path: forge/build/libs
